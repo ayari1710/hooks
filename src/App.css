@@ -1,0 +1,54 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3% 10%;
+}
+.movieApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.movieList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+.movieCard {
+  width: 15rem;
+  background-color: black;
+  color: red;
+  margin: 1%;
+  border: 1px solid red;
+}
+
+.movieImg {
+  width: 97%;
+  margin: 62px 0 10px 4px;
+  border-bottom: red solid 0.5px;
+}
+
+.movieTitle {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color:red;
+}
+
+.addMovieBtn {
+  cursor: pointer;
+  font-size: 50px;
+  margin: 75% 0;
+}
