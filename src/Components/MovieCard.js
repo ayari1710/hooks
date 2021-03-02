@@ -2,6 +2,8 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import Rating from './Rating'
 import ModalAddMovie from './AddMovie'
+import {Link,Switch,Route}from 'react-router-dom'
+import BandeAnnonce from '../BandeAnnonce'
 
 const MovieCard = ({ movie ,AddMovie, addCard}) => {
   console.log(addCard);
@@ -22,6 +24,8 @@ addCard ?
         <Card.Body>
           <Card.Title className="movieTitle">{movie.title}</Card.Title>
           <Rating filterRate={false} movieRating={movie.rating} />
+
+
         </Card.Body>
       </Card>
     )

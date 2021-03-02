@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-
+import {Link}from 'react-router-dom'
 const MovieList = ({movies,inputsearch,rating,AddMovie }) => {
   return (
     <div className="movieList">
@@ -9,8 +9,8 @@ const MovieList = ({movies,inputsearch,rating,AddMovie }) => {
      &&
        el.rating >= rating
      ).map(
-       (el)=> <MovieCard movie={el} key={el.id} />
-       
+       (el)=><Link to={{pathname:`/bandeannonce/${el.id}`,state:{el:el}}}  key={el.id} style={{margin:"2%"}}> <MovieCard movie={el} />
+ </Link>       
      )
      }
       <MovieCard  className="addMovieBtn" AddMovie={AddMovie} addCard={true}/>

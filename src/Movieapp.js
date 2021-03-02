@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import listMovies from "./MovieData";
 import FilterByName from "./Components/FilterByName";
 import Rating from './Components/Rating'
+import { Route ,Switch} from "react-router-dom";
 
 const Movieapp = () => {
   const [movies, setMovies] = useState(listMovies);
@@ -20,7 +21,7 @@ const Movieapp = () => {
       <Rating  filterRate={true }rating={rating } setRating={setRating} />
       <FilterByName     inputsearch={inputsearch}  setinputsearch={setinputsearch}/>
       </div>
-      
+     
       <MovieList
         movies={movies}
         inputsearch={inputsearch}
